@@ -1,19 +1,17 @@
 <?php
 
+require_once('functions.php');
 echo "<h1>Update Bier</h1>";
 
 echo "Data uit het vorige formulier:<br>";
 
-echo "Biercode:" . $_GET['biercode'];
-
 echo "<br>";
-
 
 ?>
 
 <html>
     <body>
-        Biercode:<input type="" name="biercode" value=""><br>
+        Biercode:<input type="" name="biercode" value="<?php echo "Biercode:" . $_GET['biercode'];?>"><br>
         Naam: <input type="" name="naam" value=""><br>
         Soort: <input type="" name="soort" value=""><br>
         Stijl: <input type="" name="stijl" value=""><br>
